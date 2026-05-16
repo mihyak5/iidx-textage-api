@@ -37,9 +37,10 @@ def fetch_and_clean_data():
         
         if match:
             raw_js_object = match.group(1)
-            
             safe_str = raw_js_object
-            # 删除了那行会误伤 DJ'TEKINA//SOMETHING 的致命错误代码！
+            
+            # 【核心补丁】：精准切除站长夹带在数据里的 /* 隐藏注释 */，防止 Python 语法崩溃
+            safe_str = re.sub(r'/\*.*?\*/', '', safe_str)
             
             # 将 JS 独有的关键字替换为 Python 认识的大写关键字
             safe_str = re.sub(r'\btrue\b', 'True', safe_str)
