@@ -1,4 +1,6 @@
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 import chompjs
 import json
 import re
@@ -15,36 +17,44 @@ def fetch_and_clean_data():
         'Referer': 'http://textage.cc/'
     }
     
+    # 【核心修复 1】：配置高级请求会话，加入自动重试机制
+    session = requests.Session()
+    retry_strategy = Retry(
+        total=3,             # 最多重试 3 次
+        backoff_factor=2,    # 每次重试的间隔时间递增 (0s, 2s, 4s)
+        status_forcelist=[403, 429, 500, 502, 503, 504], # 遇到这些服务器错误也自动重试
+        allowed_methods=["GET"]
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    
     try:
         print(f"正在请求 {url} ...")
-        response = requests.get(url, headers=headers, timeout=15)
+        # 【核心修复 2】：使用 session 请求，并将超时时间从 15 秒放宽到 30 秒
+        response = session.get(url, headers=headers, timeout=30)
         print(f"HTTP 状态码: {response.status_code}")
         
         if response.status_code != 200:
             print(f"❌ 请求失败！")
             return
 
-        # 【核心修复 1】将 shift_jis 升级为 cp932（Windows扩展版）
-        # 完美解决 HuΣeR 等特殊字符导致的乱码和“吞引号”崩溃问题！
         response.encoding = 'cp932'
         js_text = response.text
         
         print(f"成功获取到文件，文件总长度: {len(js_text)} 字符")
 
-        # 【核心修复 2】使用非贪婪匹配 (.*?) 并匹配到分号，精确隔离脏代码
         match = re.search(r'titletbl\s*=\s*(\{.*?\})\s*;', js_text, re.DOTALL)
         
         if match:
             raw_js_object = match.group(1)
             print(f"成功定位到数据对象，有效代码长度: {len(raw_js_object)} 字符")
             
-            # 【核心修复 3】预处理：找出顶部定义的变量 (如 SS=35) 提前替换进数据中
             vars_match = re.findall(r'^([A-Z0-9_]+)\s*=\s*([0-9]+);', js_text, re.MULTILINE)
             for var_name, var_value in vars_match:
                 raw_js_object = re.sub(r'\b' + var_name + r'\b', var_value, raw_js_object)
 
             try:
-                # 此时的数据已经是完美无瑕的 JS 对象了
                 clean_data = chompjs.parse_js_object(raw_js_object)
                 
                 with open("titletbl.json", "w", encoding="utf-8") as f:
@@ -57,7 +67,6 @@ def fetch_and_clean_data():
                 err_str = str(parse_error)
                 print(f"详细错误: {err_str}")
                 
-                # 【防弹机制】智能追踪：提取出问题的具体字符位置，画出“案发现场”
                 err_match = re.search(r'char (\d+)', err_str)
                 if err_match:
                     pos = int(err_match.group(1))
@@ -71,6 +80,8 @@ def fetch_and_clean_data():
         else:
             print("❌ 未找到目标数据对象！请检查正则。")
             
+    except requests.exceptions.Timeout:
+        print("❌ 网络超时！已经重试了 3 次，但服务器依然没有响应。这通常是源网站暂时无法访问，请稍后再跑一次 Actions。")
     except Exception as e:
         print("❌ 发生致命网络/系统错误：")
         traceback.print_exc()
