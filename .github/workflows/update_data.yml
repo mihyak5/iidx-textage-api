@@ -16,24 +16,26 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 配置 Python 环境
-        uses: actions/setup-python@v5
+      # 【改动1】：把 Python 换成 Node.js 环境
+      - name: 配置 Node.js 环境
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.10'
+          node-version: '20'
 
+      # 【改动2】：安装我们在 js 代码里用到的两个请求和解码工具
       - name: 安装依赖
         run: |
-          pip install -r requirements.txt
+          npm install axios iconv-lite
 
-      - name: 运行爬虫脚本
+      # 【改动3】：运行我们的 JS 脚本
+      - name: 运行 Node.js 爬虫脚本
         run: |
-          python fetch_data.py
+          node fetch_data.js
 
       - name: 提交并推送到仓库
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
-          
           git add titletbl.json || true
-          git commit -m "Auto update textage data" || echo "No changes to commit"
+          git commit -m "Auto update textage data via Node.js" || echo "No changes to commit"
           git push
