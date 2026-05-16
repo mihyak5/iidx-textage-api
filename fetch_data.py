@@ -24,32 +24,52 @@ def fetch_and_clean_data():
             print(f"❌ 请求失败！")
             return
 
-        response.encoding = 'shift_jis'
+        # 【核心修复 1】将 shift_jis 升级为 cp932（Windows扩展版）
+        # 完美解决 HuΣeR 等特殊字符导致的乱码和“吞引号”崩溃问题！
+        response.encoding = 'cp932'
         js_text = response.text
         
         print(f"成功获取到文件，文件总长度: {len(js_text)} 字符")
 
-        # 【核心修复】：将正则里的 \[ \] 改成了 \{ \}，并使用贪婪匹配 .* 抓取整个对象
-        match = re.search(r'titletbl\s*=\s*(\{.*\})', js_text, re.DOTALL)
+        # 【核心修复 2】使用非贪婪匹配 (.*?) 并匹配到分号，精确隔离脏代码
+        match = re.search(r'titletbl\s*=\s*(\{.*?\})\s*;', js_text, re.DOTALL)
         
         if match:
             raw_js_object = match.group(1)
-            print(f"成功定位到数据对象！")
+            print(f"成功定位到数据对象，有效代码长度: {len(raw_js_object)} 字符")
             
+            # 【核心修复 3】预处理：找出顶部定义的变量 (如 SS=35) 提前替换进数据中
+            vars_match = re.findall(r'^([A-Z0-9_]+)\s*=\s*([0-9]+);', js_text, re.MULTILINE)
+            for var_name, var_value in vars_match:
+                raw_js_object = re.sub(r'\b' + var_name + r'\b', var_value, raw_js_object)
+
             try:
-                # chompjs 会完美把非标准的 JS 对象转成 Python 字典
+                # 此时的数据已经是完美无瑕的 JS 对象了
                 clean_data = chompjs.parse_js_object(raw_js_object)
                 
                 with open("titletbl.json", "w", encoding="utf-8") as f:
                     json.dump(clean_data, f, ensure_ascii=False, indent=2)
                     
                 print(f"🎉 大成功！清洗并保存了 {len(clean_data)} 条曲目数据！")
+                
             except Exception as parse_error:
                 print(f"❌ JSON 解析失败！")
-                print(f"详细错误: {parse_error}")
+                err_str = str(parse_error)
+                print(f"详细错误: {err_str}")
+                
+                # 【防弹机制】智能追踪：提取出问题的具体字符位置，画出“案发现场”
+                err_match = re.search(r'char (\d+)', err_str)
+                if err_match:
+                    pos = int(err_match.group(1))
+                    start = max(0, pos - 50)
+                    end = min(len(raw_js_object), pos + 50)
+                    print(f"\n⚠️ 解析崩溃位置附近的文本 (前后50字符):")
+                    print("="*60)
+                    print(raw_js_object[start:end])
+                    print("="*60)
+                    print(" " * (pos - start) + "^ <--- 就在这个字符附近发生了语法损坏")
         else:
-            print("❌ 未找到目标数据对象！")
-            print(f"我们抓取到的文件开头是长这样的: {js_text[:300]}")
+            print("❌ 未找到目标数据对象！请检查正则。")
             
     except Exception as e:
         print("❌ 发生致命网络/系统错误：")
