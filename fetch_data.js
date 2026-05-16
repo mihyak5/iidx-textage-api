@@ -1,46 +1,71 @@
 const axios = require('axios');
 const iconv = require('iconv-lite');
 const fs = require('fs');
-const vm = require('vm'); // Node.js 内置的虚拟机模块，专门用来安全运行 JS 字符串
+const vm = require('vm');
 
-async function fetchAndCleanData() {
-    console.log("开始获取 textage 数据 (Node.js V8 引擎版)...");
-    const url = "http://textage.cc/score/titletbl.js";
+// 把所有需要抓取的文件名列在数组里
+const targetFiles = [
+    "titletbl.js",
+    "datatbl.js",
+    "actbl.js",
+    "cstbl.js",
+    "cstbl1.js",
+    "cstbl2.js",
+    "cltbl.js",
+    "stepup.js"
+];
 
-    try {
-        // 请求数据，注意这里必须用 arraybuffer 接收原始字节，防止乱码
-        const response = await axios.get(url, {
-            responseType: 'arraybuffer',
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-                'Referer': 'http://textage.cc/'
-            },
-            timeout: 30000 // 30秒超时
-        });
+// 一个简单的延迟函数，用来做“礼貌抓取”
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-        // 完美解码日文 Shift-JIS / CP932
-        const jsCode = iconv.decode(response.data, 'cp932');
-        console.log(`成功获取代码，长度: ${jsCode.length}`);
+async function fetchAllData() {
+    console.log(`🚀 开始批量获取 Textage 数据，共 ${targetFiles.length} 个文件...\n`);
 
-        // 【最核心的黑科技】：创建一个虚拟的浏览器环境 (Context)
-        const sandbox = {};
-        vm.createContext(sandbox);
+    for (const file of targetFiles) {
+        const url = `http://textage.cc/score/${file}`;
+        const baseName = file.replace('.js', ''); // 例如 titletbl
+        const jsonFileName = `${baseName}.json`;
 
-        // 让 V8 引擎直接运行站长的代码！
-        // V8 引擎会自动处理所有的 /* */ 注释、错乱的引号、奇怪的变量
-        vm.runInContext(jsCode, sandbox);
+        try {
+            console.log(`⏳ 正在请求: ${file} ...`);
+            const response = await axios.get(url, {
+                responseType: 'arraybuffer',
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36',
+                    'Referer': 'http://textage.cc/'
+                },
+                timeout: 30000 
+            });
 
-        // 运行完毕后，站长的 titletbl 数据就已经完美存在于 sandbox 中了！
-        if (sandbox.titletbl) {
-            fs.writeFileSync('titletbl.json', JSON.stringify(sandbox.titletbl, null, 2));
-            console.log(`🎉 绝杀！V8 引擎完美解析，保存了 ${Object.keys(sandbox.titletbl).length} 首曲目数据！`);
-        } else {
-            console.log("❌ 未能在代码中找到 titletbl 变量。");
+            // 完美解码日文
+            const jsCode = iconv.decode(response.data, 'cp932');
+            
+            // 为每个文件创建一个干净、独立的 V8 虚拟机环境
+            const sandbox = {};
+            vm.createContext(sandbox);
+            
+            // 执行站长代码
+            vm.runInContext(jsCode, sandbox);
+
+            // 【智能提取机制】
+            // 站长的 JS 通常会定义一个和文件名同名的全局变量（比如 datatbl.js 定义了 datatbl）
+            // 也有可能定义了多个辅助变量。我们优先提取同名变量；如果没有，就把整个运行结果保存下来。
+            let dataToSave = sandbox[baseName] ? sandbox[baseName] : sandbox;
+
+            // 保存为标准的 JSON 文件
+            fs.writeFileSync(jsonFileName, JSON.stringify(dataToSave, null, 2));
+            
+            console.log(`✅ 成功清洗并保存为 -> ${jsonFileName}`);
+
+        } catch (error) {
+            console.error(`❌ 获取或解析 ${file} 失败:`, error.message);
         }
 
-    } catch (error) {
-        console.error("❌ 发生错误：", error.message);
+        // 礼貌性暂停 2 秒，防止被站长服务器封禁 IP
+        await sleep(2000);
     }
+    
+    console.log("\n🎉 所有数据处理完毕！");
 }
 
-fetchAndCleanData();
+fetchAllData();
