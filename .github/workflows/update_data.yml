@@ -36,6 +36,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
-          git add titletbl.json || true
-          git commit -m "Auto update textage data via Node.js" || echo "No changes to commit"
+          
+          # 【关键修改】：用 *.json 把所有生成的 JSON 文件一网打尽
+          git add *.json || true
+          
+          git commit -m "Auto update all textage tables via Node.js" || echo "No changes to commit"
           git push
