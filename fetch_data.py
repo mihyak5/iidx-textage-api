@@ -30,7 +30,7 @@ def fetch_and_clean_data():
         response.encoding = 'cp932'
         js_text = response.text
         
-        # 【终极防御 1】：无情抹除文件里潜藏的所有不可见“幽灵”控制字符（仅保留换行和回车）
+        # 抹除文件里潜藏的不可见控制字符
         js_text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', js_text)
 
         match = re.search(r'titletbl\s*=\s*(\{.*?\})\s*;', js_text, re.DOTALL)
@@ -38,11 +38,10 @@ def fetch_and_clean_data():
         if match:
             raw_js_object = match.group(1)
             
-            # 【终极防御 2】：放弃 chompjs，把站长的 JS 对象当成 Python 字典来强行解析
             safe_str = raw_js_object
-            safe_str = re.sub(r'//.*', '', safe_str) # 删掉 JS 的单行注释
+            # 删除了那行会误伤 DJ'TEKINA//SOMETHING 的致命错误代码！
             
-            # 将 JS 独有的 null 等小写关键字替换为 Python 认识的大写关键字
+            # 将 JS 独有的关键字替换为 Python 认识的大写关键字
             safe_str = re.sub(r'\btrue\b', 'True', safe_str)
             safe_str = re.sub(r'\bfalse\b', 'False', safe_str)
             safe_str = re.sub(r'\bnull\b', 'None', safe_str)
