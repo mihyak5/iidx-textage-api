@@ -1827,6 +1827,70 @@
     "NU-KO",
     "ポチコの幸せな日常"
   ],
+  "bleepbep": [
+    0,
+    89,
+    0,
+    "チッピンレイヴ",
+    "kors k",
+    "Bleep Beep Bop"
+  ],
+  "inyreyes": [
+    0,
+    90,
+    0,
+    "TRANCECORE",
+    "kors k",
+    "In Your EyEs"
+  ],
+  "juicy": [
+    0,
+    91,
+    0,
+    "ELECTRO POP",
+    "kors k Lovers DJ Yoshitaka",
+    "Juicy"
+  ],
+  "rush_": [
+    0,
+    92,
+    0,
+    "BEAT ROCK",
+    "kors k feat.吉河順央",
+    "Rush!!"
+  ],
+  "its_mrcl": [
+    0,
+    93,
+    0,
+    "MIRACLE DANCE POP",
+    "Another Infinity feat. Mayumi Morinaga",
+    "It's my Miracle"
+  ],
+  "lagrang0": [
+    0,
+    94,
+    0,
+    "TRANCE CORE",
+    "t&#363;mahaB",
+    "Lagrangian Point &Oslash;"
+  ],
+  "sakurasr": [
+    0,
+    95,
+    0,
+    "HAPPY HARDCORE",
+    "Ryu☆",
+    "Sakura Sunrise"
+  ],
+  "_geki": [
+    0,
+    96,
+    0,
+    "DANCE SPEED",
+    "Ryu☆ feat.青龍",
+    "檄"
+  ],
   "20nov1st": [
     1,
     1,
@@ -21979,6 +22043,32 @@
     "JAPANESE ALTERNATIVE ROCK",
     "暁Records",
     "Wizards!"
+  ],
+  "kick_rbw": [
+    33,
+    3098,
+    0,
+    "HYPER CANDY RAVE",
+    "The 4th feat.TORIENA",
+    "<font color=\"#808000\">Kick The Rainbow</font>"
+  ],
+  "gimme_sr": [
+    33,
+    3099,
+    0,
+    "HYPER DANCE SPEED",
+    "kors k Remixed by 青龍",
+    "<font color=\"#808000\">Gimme a Big Beat</font>",
+    "<font color=\"#808000\">(青龍 Remix)</font>"
+  ],
+  "sndhv_mm": [
+    33,
+    3100,
+    0,
+    "HYPER BUCHIAGE TRANCE",
+    "Ryu☆ Remixed by Mamonis",
+    "<font color=\"#808000\">Second Heaven</font>",
+    "<font color=\"#808000\">(Mamonis Remix)</font>"
   ],
   "__dmy__": [
     99,
