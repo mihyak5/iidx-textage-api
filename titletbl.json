@@ -1378,12 +1378,12 @@
     "FAKE STYLE II"
   ],
   "ignitedn": [
-    0,
+    33,
     4072,
     0,
     "HEAT UP",
     "HHH",
-    "Ignited Night"
+    "<font color=\"#00a060\">Ignited Night</font>"
   ],
   "proguniv": [
     0,
@@ -22117,6 +22117,38 @@
     "太閤ヒップホップ",
     "秀よし君",
     "<font color=\"#ff6000\">三日天下モンキー</font>"
+  ],
+  "fizzypop": [
+    33,
+    3393,
+    0,
+    "HAPPY HARDCORE",
+    "TORIENA",
+    "<font color=\"#00a060\">FIZZY FIZZY POP</font>"
+  ],
+  "d_k_n_on": [
+    33,
+    3394,
+    0,
+    "HARDCORE",
+    "RoughSketch",
+    "<font color=\"#00a060\">D.K.N. ON</font>"
+  ],
+  "limlight": [
+    33,
+    3395,
+    0,
+    "CYBER LIQUID FUNK",
+    "Maozon",
+    "<font color=\"#00a060\">Limelight</font>"
+  ],
+  "dolphink": [
+    33,
+    3396,
+    0,
+    "AQUA FRONTIER",
+    "lapix",
+    "<font color=\"#00a060\">Dolphin Kick</font>"
   ],
   "__dmy__": [
     99,
