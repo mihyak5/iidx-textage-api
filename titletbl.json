@@ -22138,7 +22138,7 @@
     33,
     3395,
     0,
-    "CYBER LIQUID FUNK",
+    "CYBER LIQUIDFUNK",
     "Maozon",
     "<font color=\"#00a060\">Limelight</font>"
   ],
@@ -22149,6 +22149,23 @@
     "AQUA FRONTIER",
     "lapix",
     "<font color=\"#00a060\">Dolphin Kick</font>"
+  ],
+  "ex_otogi": [
+    33,
+    2899,
+    0,
+    "アニメ",
+    "ryo (supercell) / かぐや(cv.夏吉ゆうこ) & 月見ヤチヨ(cv.早見沙織) from 超かぐや姫!",
+    "Ex-Otogibanashi"
+  ],
+  "_meltcpk": [
+    33,
+    2900,
+    0,
+    "アニメ／ボーカロイド／J-POP",
+    "ryo (supercell)",
+    "メルト CPK! Remix",
+    " (初音ミク ver.)"
   ],
   "__dmy__": [
     99,
