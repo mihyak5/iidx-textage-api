@@ -10684,7 +10684,7 @@
     1,
     "電波",
     "山本椛(monotone)",
-    "突撃！ガラスのニーソ姫！"
+    "突撃!ガラスのニーソ姫!"
   ],
   "resistan": [
     19,
@@ -22182,6 +22182,22 @@
     "TECH SPEED",
     "D.J.Amuro",
     "<font color=\"#c040c0\">super double play sessions</font>"
+  ],
+  "9_1": [
+    33,
+    3401,
+    0,
+    "HARD DANCE",
+    "めめめ",
+    "<font color=\"#e060e0\">9-1</font>"
+  ],
+  "_hekirek": [
+    33,
+    3402,
+    0,
+    "EUPHORIC HARDSTYLE",
+    "Yuta Imai",
+    "<font color=\"e060e0\">霹靂</font>"
   ],
   "__dmy__": [
     99,
