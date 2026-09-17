@@ -21931,7 +21931,7 @@
     "NU-KO",
     "<font color=\"#ff00ff\">恋愛観測</font>"
   ],
-  "_teros": [
+  "_telos": [
     33,
     3386,
     0,
@@ -22150,23 +22150,6 @@
     "lapix",
     "<font color=\"#00a060\">Dolphin Kick</font>"
   ],
-  "ex_otogi": [
-    33,
-    2899,
-    0,
-    "アニメ",
-    "ryo (supercell) / かぐや(cv.夏吉ゆうこ) & 月見ヤチヨ(cv.早見沙織) from 超かぐや姫!",
-    "<font color=\"e060e0\">Ex-Otogibanashi</font>"
-  ],
-  "_meltcpk": [
-    33,
-    2900,
-    0,
-    "アニメ／ボーカロイド／J-POP",
-    "ryo (supercell)",
-    "<font color=\"e060e0\">メルト CPK! Remix</font>",
-    "<font color=\"e060e0\"> (初音ミク ver.)</font>"
-  ],
   "digitocn": [
     33,
     3397,
@@ -22182,22 +22165,6 @@
     "TECH SPEED",
     "D.J.Amuro",
     "<font color=\"#c040c0\">super double play sessions</font>"
-  ],
-  "9_1": [
-    33,
-    3401,
-    0,
-    "HARD DANCE",
-    "めめめ",
-    "<font color=\"#e060e0\">9-1</font>"
-  ],
-  "_hekirek": [
-    33,
-    3402,
-    0,
-    "EUPHORIC HARDSTYLE",
-    "Yuta Imai",
-    "<font color=\"e060e0\">霹靂</font>"
   ],
   "_jellyjw": [
     33,
@@ -22230,6 +22197,296 @@
     "J-POP",
     "hololive IDOL PROJECT",
     "夢色ワンダー"
+  ],
+  "benizakr": [
+    34,
+    3403,
+    0,
+    "ENERGETIC JAPANESQUE",
+    "BlackY",
+    "BENiZAKURA"
+  ],
+  "citrofrt": [
+    34,
+    3404,
+    0,
+    "HYPERTRANCE",
+    "REMO-CON",
+    "Citroforte"
+  ],
+  "deadrabt": [
+    34,
+    3405,
+    0,
+    "DJENTLE ZAAGBREAKSTEP",
+    "Hylen feat.DJ14 (SCRATCHING)",
+    "DEADRABBIT!!"
+  ],
+  "dstalker": [
+    34,
+    3406,
+    0,
+    "BREAKCORE",
+    "Zekk",
+    "Deathstalker"
+  ],
+  "dying4u": [
+    34,
+    3407,
+    0,
+    "JERSEY FUTURE CORE",
+    "EmoCosine",
+    "Dying 4 U"
+  ],
+  "ex_otogi": [
+    34,
+    2899,
+    0,
+    "アニメ",
+    "ryo (supercell) / かぐや(cv.夏吉ゆうこ) & 月見ヤチヨ(cv.早見沙織) from 超かぐや姫!",
+    "Ex-Otogibanashi"
+  ],
+  "genegrid": [
+    34,
+    3408,
+    0,
+    "TECH CORE",
+    "Sota Fujimori",
+    "GENERATED GRID"
+  ],
+  "mlwdiary": [
+    34,
+    3409,
+    0,
+    "IVORY BASS",
+    "YUC'e",
+    "Mellow Diary"
+  ],
+  "memolust": [
+    34,
+    3410,
+    0,
+    "HARDCORE",
+    "nora2r",
+    "Memorylust"
+  ],
+  "nomad": [
+    34,
+    3411,
+    0,
+    "HIPHOP",
+    "魂音泉",
+    "NOMAD (feat.らっぷぴと)"
+  ],
+  "otoroshi": [
+    34,
+    3412,
+    0,
+    "ORIENTAL HARDPSY",
+    "影虎。",
+    "OTOROSHI"
+  ],
+  "pistolsw": [
+    34,
+    3413,
+    0,
+    "HYBRID BREAKS",
+    "KARUT",
+    "PISTOL SWORD"
+  ],
+  "risebynd": [
+    34,
+    3414,
+    0,
+    "TRANCE",
+    "Taishi",
+    "Rise Beyond"
+  ],
+  "samsword": [
+    34,
+    3415,
+    0,
+    "DUBSTEP",
+    "Dubscribe",
+    "Samurai Sword"
+  ],
+  "shogunld": [
+    34,
+    3416,
+    0,
+    "HYPER ENKA POP",
+    "Xceon",
+    "Shogun's Last Dawn feat. Kanae Asaba"
+  ],
+  "snglgirl": [
+    34,
+    3417,
+    0,
+    "STYLISH FUTURE",
+    "HuΣeR",
+    "Singularity Girl"
+  ],
+  "sparkrsh": [
+    34,
+    3418,
+    0,
+    "TECH TRANCE",
+    "Nhato",
+    "Spark Rush"
+  ],
+  "tenkoksr": [
+    34,
+    3419,
+    0,
+    "DEATH TEKNO",
+    "STEVIE(Trymatic)/Nana Takahashi Prod. by L.E.D.",
+    "TEKNO KEISER"
+  ],
+  "9_1": [
+    34,
+    3401,
+    0,
+    "HARD DANCE",
+    "めめめ",
+    "9-1"
+  ],
+  "_anomaly": [
+    34,
+    3420,
+    0,
+    "PROGRESSIVE METAL",
+    "Yvya",
+    "ΛИ0MΛLY"
+  ],
+  "_akujikk": [
+    34,
+    3421,
+    0,
+    "DJENT/UK INDUSTRIAL/RAP",
+    "RoughSkreamZ feat. Fra",
+    "悪ジ狂キ"
+  ],
+  "_utatuki": [
+    34,
+    3422,
+    0,
+    "JAPANESE PIANO ROCK",
+    "xi feat. Risa Yuzuki",
+    "泡沫と月"
+  ],
+  "_eimuyuk": [
+    34,
+    3423,
+    0,
+    "EPHEMERAL ROCK",
+    "めと (Metomate)",
+    "映夢雪花抄"
+  ],
+  "_gekkasj": [
+    34,
+    3424,
+    0,
+    "ORBITALIC MOON REQUIEM",
+    "U1 overground",
+    "月下散刃"
+  ],
+  "_saikai": [
+    34,
+    3425,
+    0,
+    "ORIENTAL",
+    "satella",
+    "斎戒"
+  ],
+  "_dddddru": [
+    34,
+    3426,
+    0,
+    "エレクトロ",
+    "雨良 Amala",
+    "ダダダダダル"
+  ],
+  "_tsukumo": [
+    34,
+    3427,
+    0,
+    "和風歌謡電子恋歌",
+    "irucaice feat. あやぽんず＊(森羅万象)",
+    "九十九ノ恋結ビ"
+  ],
+  "_dmutant": [
+    34,
+    3428,
+    0,
+    "ボカロ",
+    "ナユタン星人",
+    "でぃすこみゅーたんと！"
+  ],
+  "_derakrt": [
+    34,
+    3429,
+    0,
+    "ぽっぷむぅ～じっく",
+    "デラむぅとのらつーあーる",
+    "デラむぅのでらっくす☆かるた",
+    "<span style='font-size:8pt'>～NOTES・CHORD・PEAK編～</span>"
+  ],
+  "_bbfight": [
+    34,
+    3430,
+    0,
+    "IIDX EDITION",
+    "Remixed by L.E.D.-G feat.佐伯伊織",
+    "倍倍FIGHT!"
+  ],
+  "_franken": [
+    34,
+    3431,
+    0,
+    "J-POP",
+    "HIMEHINA",
+    "フランケンシュタインの怪物"
+  ],
+  "_hekirek": [
+    34,
+    3402,
+    0,
+    "EUPHORIC HARDSTYLE",
+    "Yuta Imai",
+    "霹靂"
+  ],
+  "_meltcpk": [
+    34,
+    2900,
+    0,
+    "アニメ／ボーカロイド／J-POP",
+    "ryo (supercell)",
+    "メルト CPK! Remix",
+    " (初音ミク ver.)"
+  ],
+  "_raitei": [
+    34,
+    3432,
+    0,
+    "TECHSPEED",
+    "dj TAKA",
+    "雷霆の如し"
+  ],
+  "_lovpara": [
+    34,
+    3433,
+    0,
+    "J-POP・VOCALOID",
+    "DECO*27",
+    "ラブパラ"
+  ],
+  "_yashano": [
+    34,
+    3434,
+    0,
+    "BATTLE SWORD",
+    "劇団レコード feat.T4K",
+    "夜叉ノ魂"
   ],
   "__dmy__": [
     99,
