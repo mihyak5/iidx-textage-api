@@ -1063,7 +1063,7 @@
     0,
     "ANIMA SONG",
     "NU-KO",
-    "<font color=\"#ff4080\">朱と碧のランページ</font>"
+    "朱と碧のランページ"
   ],
   "_setsujo": [
     29,
@@ -1159,7 +1159,7 @@
     0,
     "BREAKBEATS",
     "BEMANI Sound Team \"Dustup\"",
-    "<font color=\"#ff4080\">1116</font>"
+    "1116"
   ],
   "_sripple": [
     30,
@@ -1247,7 +1247,7 @@
     0,
     "HYPER JAPANESQUE",
     "BEMANI Sound Team \"HuΣeR\" feat.Fernweh",
-    "<font color=\"#ff4080\">Lycoris</font>"
+    "Lycoris"
   ],
   "all_ok": [
     0,
@@ -1287,7 +1287,7 @@
     0,
     "RINASCITA",
     "少年ラジオ",
-    "<font color=\"#ff4080\">u&#x4D9;n</font>"
+    "u&#x4D9;n"
   ],
   "_love2sg": [
     0,
@@ -1335,7 +1335,7 @@
     0,
     "MELODIC CONTEMPORARIDDIM",
     "Feryquitous",
-    "<font color=\"#ff4080\">Plea Per Phase</font>"
+    "Plea Per Phase"
   ],
   "cosycata": [
     0,
@@ -1351,7 +1351,7 @@
     0,
     "CROSSOVER",
     "Hommarju vs RoughSketch",
-    "<font color=\"#ff4080\">Cross Fire</font>"
+    "Cross Fire"
   ],
   "cybercon": [
     0,
@@ -5416,7 +5416,7 @@
     1,
     "ELECTRONICA",
     "SLAKE",
-    "<font color=\"#ff4080\">ADVANCE</font>"
+    "ADVANCE"
   ],
   "1samurai": [
     10,
@@ -10238,8 +10238,8 @@
     1,
     "LA FABERO",
     "KANTASIA by S.S.D. PRODUCTS",
-    "<font color=\"#ff4080\">A MINSTREL</font>",
-    "<font color=\"#ff4080\"> ～ ver.short-scape ～</font>"
+    "A MINSTREL",
+    " ～ ver.short-scape ～"
   ],
   "almace": [
     19,
@@ -20034,7 +20034,7 @@
     0,
     "PSYCHEDELIC",
     "BEMANI Sound Team \"Sota Fujimori\"",
-    "<font color=\"#c040c0\">Psychedelic Intelligence</font>"
+    "Psychedelic Intelligence"
   ],
   "zeroinon": [
     31,
@@ -20139,7 +20139,7 @@
     0,
     "HARD DANCE",
     "kors k",
-    "<font color=\"#ff4080\">Monkey Business</font>"
+    "Monkey Business"
   ],
   "xb10r": [
     31,
@@ -20147,7 +20147,7 @@
     0,
     "VOLTENIZED CORE",
     "隣の庭は青い(庭師+Aoi)",
-    "<font color=\"#ff4080\">Xb10r</font>"
+    "Xb10r"
   ],
   "ambiverm": [
     31,
@@ -20155,7 +20155,7 @@
     0,
     "HARD RENAISSANCE",
     "BEMANI Sound Team \"二代目朱雀 feat.朱雀\"",
-    "<font color=\"#ff4080\">Ambivalent Vermilia</font>"
+    "Ambivalent Vermilia"
   ],
   "cntsheep": [
     31,
@@ -20780,7 +20780,7 @@
     0,
     "MELODIOUS WATER PIANO",
     "かねこちはる",
-    "<div class=ltmodel>ファイナルレター</div>"
+    "<font color=\"#00a0c0\">ファイナルレター</font>"
   ],
   "lightspd": [
     32,
@@ -20788,7 +20788,7 @@
     0,
     "FRENCHCORE",
     "Tanukichi",
-    "<div class=ltmodel>Lightspeed</div>"
+    "<font color=\"#00a0c0\">Lightspeed</font>"
   ],
   "cosmcv3l": [
     32,
@@ -20796,7 +20796,7 @@
     0,
     "UCHIAGE CORE",
     "BEMANI Sound Team \"Coyaan & KE!JU & ZAQUVA\"",
-    "<div class=ltmodel>COSMIC V3LOCITY</div>"
+    "<font color=\"#00a0c0\">COSMIC V3LOCITY</font>"
   ],
   "_musou": [
     32,
@@ -20804,7 +20804,7 @@
     0,
     "SENGOKU LEGENDS",
     "SOUND HOLIC Vs. VENUS feat. Nana Takahashi",
-    "<font color=\"#ff4080\">無双</font>"
+    "無双"
   ],
   "exmasive": [
     32,
@@ -20812,7 +20812,7 @@
     0,
     "HYBRID HARDSTYLE",
     "BEMANI Sound Team \"L.E.D.-G\"",
-    "<font color=\"#ff4080\">EX-MASSIVE FIGHTER</font>"
+    "EX-MASSIVE FIGHTER"
   ],
   "arcanos": [
     32,
@@ -20820,7 +20820,7 @@
     0,
     "NOSTALGIC ARTCORE",
     "DJ Totoriott",
-    "<font color=\"#ff4080\">Arcanos</font>"
+    "Arcanos"
   ],
   "bang_boo": [
     32,
@@ -20828,7 +20828,7 @@
     0,
     "BANGIN' TECHNO",
     "二代目白虎",
-    "<font color=\"#ff4080\">Bang-Boo Bumble</font>"
+    "Bang-Boo Bumble"
   ],
   "divjudge": [
     32,
@@ -20836,7 +20836,7 @@
     0,
     "SYMPHONIC BREAK BEATS",
     "OSTER project",
-    "<font color=\"#ff4080\">DIVINE JUDGEMENT</font>"
+    "DIVINE JUDGEMENT"
   ],
   "_hazerya": [
     32,
@@ -20844,7 +20844,7 @@
     0,
     "繚乱呂句",
     "敦姫",
-    "<font color=\"#ff4080\">爆ぜりゃんせ</font>"
+    "爆ぜりゃんせ"
   ],
   "_shokyok": [
     32,
@@ -20852,7 +20852,7 @@
     0,
     "ROCK",
     "Pizuya's Cell",
-    "<font color=\"#ff4080\">消極的セツナイズム</font>"
+    "消極的セツナイズム"
   ],
   "roarchro": [
     32,
@@ -20860,7 +20860,7 @@
     0,
     "DIAMOND CORE",
     "BEMANI Sound Team \"KE!JU\"",
-    "<font color=\"#ff4080\">Roar of Chronos</font>"
+    "Roar of Chronos"
   ],
   "_we_idol": [
     32,
@@ -20884,7 +20884,7 @@
     0,
     "HARDCORE TECHNO",
     "TORIENA",
-    "<font color=\"#ff4080\">ドリムチウ</font>"
+    "ドリムチウ"
   ],
   "slumberp": [
     32,
@@ -20892,7 +20892,7 @@
     0,
     "MULTIGENRE",
     "BEMANI Sound Team \"めめめ\"",
-    "<font color=\"#ff4080\">Slumber☆Party</font>"
+    "Slumber☆Party"
   ],
   "showlove": [
     32,
@@ -20900,7 +20900,7 @@
     0,
     "NEORAVE",
     "Hommarju",
-    "<font color=\"#ff4080\">Show Me All Your Love</font>"
+    "Show Me All Your Love"
   ],
   "mid_crnr": [
     32,
@@ -20908,8 +20908,8 @@
     0,
     "HARD DANCE",
     "REMO-CON",
-    "<font color=\"#ff4080\">Mid-Corner</font>",
-    "<font color=\"#ff4080\"> (Magic Maker)</font>"
+    "Mid-Corner",
+    " (Magic Maker)"
   ],
   "_cantata": [
     32,
@@ -20917,8 +20917,8 @@
     0,
     "ANTHEM",
     "BEMANI Sound Team \"Cuvelia\"",
-    "<font color=\"#ff4080\">天使のカンタータ</font>",
-    "<font color=\"#ff4080\"> -Cantata of Angels-</font>"
+    "天使のカンタータ",
+    " -Cantata of Angels-"
   ],
   "_obsomet": [
     32,
@@ -20950,7 +20950,7 @@
     0,
     "UPLIFTING TRANCE",
     "Maozon",
-    "<font color=\"#ff4080\">Constellation</font>"
+    "Constellation"
   ],
   "flyawayb": [
     32,
@@ -20958,7 +20958,7 @@
     0,
     "HARD DANCE",
     "Blacklolita",
-    "<font color=\"#ff4080\">FlyAway</font>"
+    "FlyAway"
   ],
   "horadeve": [
     32,
@@ -20966,7 +20966,7 @@
     0,
     "CYBER FLAMENCO",
     "Vandalusia改",
-    "<font color=\"#ff4080\">hora de verdad</font>"
+    "hora de verdad"
   ],
   "_haruiro": [
     32,
@@ -20974,7 +20974,7 @@
     0,
     "AOHARU MELODY",
     "月乃 & BEMANI Sound Team \"劇団レコード\"",
-    "<font color=\"#ff4080\">ハルイロメロディー</font>"
+    "ハルイロメロディー"
   ],
   "_kiminos": [
     32,
@@ -20982,7 +20982,7 @@
     0,
     "8-BIT MIXTURE",
     "Nhato",
-    "<font color=\"#ff4080\">きみのせかい</font>"
+    "きみのせかい"
   ],
   "withouth": [
     32,
@@ -20990,7 +20990,7 @@
     0,
     "VARIABLE ORIENTAL CORE",
     "BEMANI Sound Team \"ZAQUVA\"",
-    "<font color=\"#ff4080\">Without Heaven</font>"
+    "Without Heaven"
   ],
   "godmind": [
     32,
@@ -20998,7 +20998,7 @@
     0,
     "NEO HARD RENAISSANCE",
     "Tatsunoshin",
-    "<font color=\"#ff4080\">God Mind</font>"
+    "God Mind"
   ],
   "sugarush": [
     32,
@@ -21006,7 +21006,7 @@
     0,
     "H4P9Y H@R|>CORE",
     "Yuta Imai",
-    "<font color=\"#ff4080\">SμG@R RU$#</font>"
+    "SμG@R RU$#"
   ],
   "_dmsinko": [
     32,
@@ -21014,7 +21014,7 @@
     0,
     "HARD ORIENTAL",
     "豚乙女×BEMANI Sound Team \"PON\"",
-    "<font color=\"#ff4080\">弾幕信仰</font>"
+    "弾幕信仰"
   ],
   "sheroine": [
     32,
@@ -21022,7 +21022,7 @@
     0,
     "GENSOU FULLON",
     "Amateras Records vs BEMANI Sound Team \"TATSUYA\" feat. miko",
-    "<font color=\"#ff4080\">SUPER HEROINE!!</font>"
+    "SUPER HEROINE!!"
   ],
   "_kyukura": [
     32,
@@ -21046,7 +21046,7 @@
     0,
     "DRUM'N'BASS",
     "Zekk",
-    "<font color=\"#ff4080\">MARLIN</font>"
+    "MARLIN"
   ],
   "mightyct": [
     32,
@@ -21054,7 +21054,7 @@
     0,
     "HAPPY HARDCORE",
     "KARUT",
-    "<font color=\"#ff4080\">Mighty Cutie</font>"
+    "Mighty Cutie"
   ],
   "_pastlsm": [
     32,
@@ -21062,7 +21062,7 @@
     0,
     "KAWAII FUTURE BASS",
     "Snail's House",
-    "<font color=\"#ff4080\">ＰＡＳＴＥＬＩＳＭ</font>"
+    "ＰＡＳＴＥＬＩＳＭ"
   ],
   "stgztrip": [
     32,
@@ -21070,7 +21070,7 @@
     0,
     "ANIME-STYLE DRUM AND BASS",
     "Xceon",
-    "<font color=\"#ff4080\">Stargazing Trip ～星 探す旅～ ft. 小林マナ</font>"
+    "Stargazing Trip ～星 探す旅～ ft. 小林マナ"
   ],
   "_sukitte": [
     32,
@@ -21078,7 +21078,7 @@
     0,
     "Hi-ラブコメPOP",
     "cosMo@暴走P & BEMANI Sound Team \"L.E.D.-G\"",
-    "<font color=\"#ff4080\">スキッテイエェエエェ!!!!</font>"
+    "スキッテイエェエエェ!!!!"
   ],
   "aqvion": [
     32,
@@ -21086,7 +21086,7 @@
     0,
     "AQUATIC TECHCORE",
     "lapix",
-    "<font color=\"#ff4080\">Aqvion</font>"
+    "Aqvion"
   ],
   "skedulv1": [
     32,
@@ -21094,7 +21094,7 @@
     0,
     "DJ BATTLE",
     "DJ Mass MAD Izm*",
-    "<font color=\"#ff4080\">Skratch Education Lv-1</font>"
+    "Skratch Education Lv-1"
   ],
   "_explore": [
     32,
@@ -21143,7 +21143,7 @@
     0,
     "MULTIGENRE",
     "BEMANI Sound Team \"めめめ\"",
-    "<font color=\"#ff4080\">Galaxy Collapse</font>"
+    "Galaxy Collapse"
   ],
   "goodlook": [
     32,
@@ -21151,7 +21151,7 @@
     0,
     "RAVE BREAKS",
     "JAKAZiD",
-    "<font color=\"#ff4080\">Good Looking</font>"
+    "Good Looking"
   ],
   "evereuph": [
     32,
@@ -21159,7 +21159,7 @@
     0,
     "HYPERTRANCE",
     "crayvxn",
-    "<font color=\"#ff4080\">everlastingeuphoria:</font>"
+    "everlastingeuphoria:"
   ],
   "_arabhyp": [
     32,
@@ -21167,7 +21167,7 @@
     0,
     "ARABIC TRAP CORE",
     "BEMANI Sound Team \"マックス ステロイ度!\"",
-    "<font color=\"#ff4080\">アラビアン ハイパー ナイト</font>"
+    "アラビアン ハイパー ナイト"
   ],
   "uaigh": [
     32,
@@ -21175,7 +21175,7 @@
     0,
     "NEURO FUNK / CEILTEACH DORCHA",
     "かめりあ",
-    "<font color=\"#ff4080\">Uaigh Geala&#0237;</font>"
+    "Uaigh Geala&#0237;"
   ],
   "buttwist": [
     32,
@@ -21183,7 +21183,7 @@
     0,
     "SPEED HOUSE",
     "Yooh",
-    "<font color=\"#00ddc0\">Butterfly Twist</font>"
+    "<font color=\"#00a0c0\">Butterfly Twist</font>"
   ],
   "xhronoxp": [
     32,
@@ -21191,7 +21191,7 @@
     0,
     "CHRONO-SYMPHONIC SPEEDCORE",
     "Silentroom",
-    "<font color=\"#00ddc0\">XHRONOXAPSULΞ</font>"
+    "<font color=\"#00a0c0\">XHRONOXAPSULΞ</font>"
   ],
   "inbetwen": [
     32,
@@ -21199,7 +21199,7 @@
     0,
     "HARDSTYLE",
     "BEMANI Sound Team \"L.E.D.-G\" feat. Mayumi Morinaga",
-    "<font color=\"#00ddc0\">IN BETWEEN</font>"
+    "<font color=\"#00a0c0\">IN BETWEEN</font>"
   ],
   "sisyphus": [
     32,
@@ -21207,7 +21207,7 @@
     0,
     "ABSURD STYLE",
     "BEMANI Sound Team \"Paoon\"",
-    "<font color=\"#00ddc0\">SISYPHUS</font>"
+    "<font color=\"#00a0c0\">SISYPHUS</font>"
   ],
   "eyeheavn": [
     32,
@@ -21215,7 +21215,7 @@
     0,
     "ORBITALIC ELECTRONIC METAL",
     "BEMANI Sound Team \"U1-ASAMi\"",
-    "<font color=\"#00ddc0\">EYE OF THE HEAVEN</font>"
+    "<font color=\"#00a0c0\">EYE OF THE HEAVEN</font>"
   ],
   "shirdal": [
     32,
@@ -21223,7 +21223,7 @@
     0,
     "CHAOTIC METAL BREAKCORE",
     "Dirty Androids",
-    "<font color=\"#ff4080\">Shirdal</font>"
+    "Shirdal"
   ],
   "tcrumble": [
     32,
@@ -21231,7 +21231,7 @@
     0,
     "SPED UP SCHRANZ",
     "Qlarabelle",
-    "<font color=\"#ff4080\">TECHNO RUMBLE</font>"
+    "TECHNO RUMBLE"
   ],
   "flamingo": [
     32,
@@ -21239,7 +21239,7 @@
     0,
     "PASSIONATE RAVE",
     "CANVAS feat. Quim&auml;r",
-    "<font color=\"#ff4080\">Fl&auml;mingo</font>"
+    "Fl&auml;mingo"
   ],
   "pinkycrz": [
     32,
@@ -21247,7 +21247,7 @@
     0,
     "HAPPY",
     "BEMANI Sound Team \"Risk Junk\"",
-    "<font color=\"#ff4080\">Pinky Happy Crazy</font>"
+    "Pinky Happy Crazy"
   ],
   "a_certif": [
     33,
@@ -21657,7 +21657,7 @@
     0,
     "DRUMSTEP",
     "MK",
-    "<font color=\"#00ddc0\">Astra Blaze</font>"
+    "<font color=\"#00a0c0\">Astra Blaze</font>"
   ],
   "go_juger": [
     33,
@@ -21665,7 +21665,7 @@
     0,
     "GLHF",
     "Juggernaut.",
-    "<font color=\"#00ddc0\">GO!</font>"
+    "<font color=\"#00a0c0\">GO!</font>"
   ],
   "hrzbeatz": [
     33,
@@ -21673,7 +21673,7 @@
     0,
     "FUTURE VIBES",
     "SOUND HOLIC feat. Nana Takahashi",
-    "<font color=\"#00ddc0\">HORIZON BEATZ</font>"
+    "<font color=\"#00a0c0\">HORIZON BEATZ</font>"
   ],
   "kingtrib": [
     33,
@@ -21681,7 +21681,7 @@
     0,
     "ブレイクコア",
     "Numb'n'dub",
-    "<font color=\"#00ddc0\">King of Tribe</font>"
+    "<font color=\"#00a0c0\">King of Tribe</font>"
   ],
   "meteorsw": [
     33,
@@ -21689,7 +21689,7 @@
     0,
     "STAR☆CORE",
     "Tatsunoshin",
-    "<font color=\"#00ddc0\">Meteor☆Shower</font>"
+    "<font color=\"#00a0c0\">Meteor☆Shower</font>"
   ],
   "rizingms": [
     33,
@@ -21697,7 +21697,7 @@
     0,
     "GOLDEN FORCE",
     "BlackY",
-    "<font color=\"#00ddc0\">RIZING-GAMERS.</font>"
+    "<font color=\"#00a0c0\">RIZING-GAMERS.</font>"
   ],
   "silkybrv": [
     33,
@@ -21705,7 +21705,7 @@
     0,
     "HARDCORE RAVE",
     "DJ Shimamura",
-    "<font color=\"#00ddc0\">SILKY BRAVE</font>"
+    "<font color=\"#00a0c0\">SILKY BRAVE</font>"
   ],
   "watermln": [
     33,
@@ -22316,7 +22316,7 @@
     0,
     "HYPER ENKA POP",
     "Xceon",
-    "Shogun's Last Dawn feat. Kanae Asaba"
+    "Shogun's Last Dawn ft. Kanae Asaba"
   ],
   "snglgirl": [
     34,
@@ -22429,7 +22429,7 @@
     "ぽっぷむぅ～じっく",
     "デラむぅとのらつーあーる",
     "デラむぅのでらっくす☆かるた",
-    "<span style='font-size:8pt'>～NOTES・CHORD・PEAK編～</span>"
+    "　<span style='font-size:8pt'>～NOTES・CHORD・PEAK編～</span>"
   ],
   "_bbfight": [
     34,
@@ -22468,7 +22468,7 @@
     34,
     3432,
     0,
-    "TECHSPEED",
+    "TECH SPEED",
     "dj TAKA",
     "雷霆の如し"
   ],
